@@ -10,7 +10,9 @@ class Stack:
         self.stack.append(element)
 
     def pop(self):
-        return self.stack.pop()
+        if len(self.stack) > 0:
+            return self.stack.pop()
+        return None
 
     def get_top(self):
         if len(self.stack) > 0:
